@@ -1,15 +1,252 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <title>Каталог</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nёrd's</title>
+    <meta name="viewport" content="width=device-width, initial-cost=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
+<body>
+<header class="page-header">
+    <div class="container">
+        <section class="page-header__navigation clearfix">
+            <a class="page-header__logo">
+                <img src="img/logo.png" alt="Логотип" width="139" height="56">
+            </a>
+
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="#">Студия</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Клиенты</a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--current">
+                        <a>Магазин</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--card">
+                        <a href="#">Корзина</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+        <div class="page-header__caption">
+            <span>Добро пожаловать в магазин <br>готовых макетов</span>
+        </div>
+    </div>
+</header>
+
+<main class="container clearfix">
+    <form class="filters" action="">
+
+        <fieldset class="cost">
+            <legend>Стоимость:</legend>
+            <div class="cost__scale">
+                <div class="cost__toggle  cost__toggle--start"></div>
+                <div class="cost__toggle  cost__toggle--end"></div>
+            </div>
+            <label class="cost__input-start">От
+                <input type="text" name="cost__input--start" value="0">
+            </label>
+            <label class="cost__input-end">До
+                <input type="text" name="cost__input--end" value="15000">
+            </label>
+        </fieldset>
+
+        <fieldset class="grid">
+            <legend>Сетка:</legend>
+            <input type="radio" id="grid__radio--1" name="grid__radio" checked>
+            <label for="grid__radio--1">Адаптивная</label>
+            <input type="radio" id="grid__radio--2" name="grid__radio">
+            <label for="grid__radio--2">Фиксированная</label>
+            <input type="radio" id="grid__radio--3" name="grid__radio">
+            <label for="grid__radio--3">Резиновая</label>
+        </fieldset>
+
+        <fieldset class="properties">
+            <legend>Особенности:</legend>
+            <input type="checkbox" id="properties__checkbox--1" name="properties__checkbox--1" checked>
+            <label for="properties__checkbox--1">Слайдер</label>
+            <input type="checkbox" id="properties__checkbox--2" name="properties__checkbox--1">
+            <label for="properties__checkbox--2">Блок преимуществ</label>
+            <input type="checkbox" id="properties__checkbox--3" name="properties__checkbox--1" checked>
+            <label for="properties__checkbox--3">Новости</label>
+            <input type="checkbox" id="properties__checkbox--4" name="properties__checkbox--1">
+            <label for="properties__checkbox--4">Галерея</label>
+            <input type="checkbox" id="properties__checkbox--5" name="properties__checkbox--1">
+            <label for="properties__checkbox--5">Корзина</label>
+
+        </fieldset>
+
+        <button class="filters__submit btn btn--gray">Показать</button>
+    </form>
+
+    <section class="catalog">
+
+        <div class="sorting clearfix">
+            <span>Сортировать:</span>
+            <a href="#" class="sorting__cost">По цене</a>
+            <a href="#" class="sorting__type">По типу</a>
+            <a href="#" class="sorting__functional">По функционалу</a>
+            <div class="sorting__method">
+                <a href="#" class="sorting__down"></a>
+                <a href="#" class="sorting__up"></a>
+            </div>
+        </div>
+
+        <ul class="catalog__list-item">
+
+            <li class="catalog__item  layout">
+                <ul class="layout__circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <img src="img/layout-aviator.jpg" alt="" width="240" height="240">
+                <div class="layout__description">
+                    <h2 class="layout__title"></h2>
+                    <p></p>
+                    <a href="" class="layout__cost"></a>
+                </div>
+            </li>
+
+            <li class="catalog__item  layout">
+                <ul class="layout__circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <img src="img/layout-sunset.jpg" alt="" width="240" height="240">
+                <div class="layout__description">
+                    <h2 class="layout__title"></h2>
+                    <p></p>
+                    <a href="" class="layout__cost"></a>
+                </div>
+            </li>
+
+            <li class="catalog__item  layout">
+                <ul class="layout__circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <img src="img/layout-forte.jpg" alt="" width="240" height="240">
+                <div class="layout__description">
+                    <h2 class="layout__title"></h2>
+                    <p></p>
+                    <a href="" class="layout__cost"></a>
+                </div>
+            </li>
+
+            <li class="catalog__item  layout">
+                <ul class="layout__circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <img src="img/layout-modern.jpg" alt="" width="240" height="240">
+                <div class="layout__description">
+                    <h2 class="layout__title"></h2>
+                    <p></p>
+                    <a href="" class="layout__cost"></a>
+                </div>
+            </li>
+
+            <li class="catalog__item  layout">
+                <ul class="layout__circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <img src="img/layout-avenue.jpg" alt="" width="239" height="240">
+                <div class="layout__description">
+                    <h2 class="layout__title"></h2>
+                    <p></p>
+                    <a href="" class="layout__cost"></a>
+                </div>
+            </li>
+
+            <li class="catalog__item  layout">
+                <ul class="layout__circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <img src="img/layout-dovetail.jpg" alt="" width="239" height="240">
+                <div class="layout__description">
+                    <h2 class="layout__title"></h2>
+                    <p></p>
+                    <a href="" class="layout__cost"></a>
+                </div>
+            </li>
+
+
+        </ul>
+
+        <ul class="pagination">
+            <li><a class="current">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li class="pagination__next"><a href="#">Следующая</a></li>
+        </ul>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer">
+    </section>
+    <section class="map">
+        <div class="container">
+            <img src="img/icon-map-marker.png" alt="" class="map__marker" width="231" height="190">
+
+            <section class="adress">
+                <h2 class="adress__title">NЁRDS DESIGN STUDIO</h2>
+                <p class="adress__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <p class="adress__number">тел. +7 (812) 275-75-75</p>
+                <a href="#" class="btn  btn--block">Напишите нам</a>
+            </section>
+
+        </div>
+    </section>
+
+    <section class="social">
+        <div class="container clearfix">
+            <div class="social__links">
+                <a href="#" class="social__btn  social__btn--vk">Vkontakte</a>
+                <a href="#" class="social__btn  social__btn--fb">Facebook</a>
+                <a href="#" class="social__btn  social__btn--ins">Instagram</a>
+            </div>
+            <div class="social__promo">
+                <b class="social__caption">Давайте дружить, это выгодно!</b>
+                <p class="social__text">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+        </div>
+    </section>
+
+</footer>
+
+<div class="modal-dialog">
+    <div class="modal-dialog__close"></div>
+
+    <form action="" class="dialog">
+        <label class="dialog__name">Ваше имя:<input type="text" placeholder="Представьтесь пожалуйста"></label>
+        <label class="dialog__mail">Ваш e-mail:<input type="text" placeholder="Для отправки ответа"></label>
+        <label class="dialog__text">Текст письма:<textarea name="text" rows="4"
+                                                           cols="79">В свободной форме</textarea></label>
+        <button class="btn  btn--block">Отправить</button>
+    </form>
+
+</div>
 </body>
+
 </html>
