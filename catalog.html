@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Nёrd's</title>
+    <title>Магазин</title>
     <meta name="viewport" content="width=device-width, initial-cost=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
@@ -15,14 +15,14 @@
 <header class="page-header">
     <div class="container">
         <section class="page-header__navigation clearfix">
-            <a class="page-header__logo">
+            <a href="index.html" class="page-header__logo">
                 <img src="img/logo.png" alt="Логотип" width="139" height="56">
             </a>
 
             <nav class="main-nav">
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
-                        <a href="#">Студия</a>
+                        <a href="index.html">Студия</a>
                     </li>
                     <li class="main-nav__item">
                         <a href="#">Клиенты</a>
@@ -88,7 +88,7 @@
 
         </fieldset>
 
-        <button class="filters__submit btn btn--gray">Показать</button>
+        <button class="btn btn--gray">Показать</button>
     </form>
 
     <section class="catalog">
@@ -99,7 +99,7 @@
             <a href="#" class="sorting__type">По типу</a>
             <a href="#" class="sorting__functional">По функционалу</a>
             <div class="sorting__method">
-                <a href="#" class="sorting__down"></a>
+                <a href="#" class="sorting__down sorting__method--current"></a>
                 <a href="#" class="sorting__up"></a>
             </div>
         </div>
@@ -114,13 +114,13 @@
                 </ul>
                 <img src="img/layout-aviator.jpg" alt="" width="240" height="240">
                 <div class="layout__description">
-                    <h2 class="layout__title"></h2>
-                    <p></p>
-                    <a href="" class="layout__cost"></a>
+                    <h2 class="layout__title">Aviator</h2>
+                    <p>Одностраничный макет с авторским дизайном</p>
+                    <a href="" class="btn btn--big-font">8000 P.</a>
                 </div>
             </li>
 
-            <li class="catalog__item  layout">
+            <li class="catalog__item  layout layout--sunset">
                 <ul class="layout__circles">
                     <li></li>
                     <li></li>
@@ -128,9 +128,9 @@
                 </ul>
                 <img src="img/layout-sunset.jpg" alt="" width="240" height="240">
                 <div class="layout__description">
-                    <h2 class="layout__title"></h2>
-                    <p></p>
-                    <a href="" class="layout__cost"></a>
+                    <h2 class="layout__title">Sunset</h2>
+                    <p>Интернет-магазин <br>с личным кабинетом</p>
+                    <a href="" class="btn btn--big-font">10000 P.</a>
                 </div>
             </li>
 
@@ -141,11 +141,6 @@
                     <li></li>
                 </ul>
                 <img src="img/layout-forte.jpg" alt="" width="240" height="240">
-                <div class="layout__description">
-                    <h2 class="layout__title"></h2>
-                    <p></p>
-                    <a href="" class="layout__cost"></a>
-                </div>
             </li>
 
             <li class="catalog__item  layout">
@@ -155,11 +150,6 @@
                     <li></li>
                 </ul>
                 <img src="img/layout-modern.jpg" alt="" width="240" height="240">
-                <div class="layout__description">
-                    <h2 class="layout__title"></h2>
-                    <p></p>
-                    <a href="" class="layout__cost"></a>
-                </div>
             </li>
 
             <li class="catalog__item  layout">
@@ -169,11 +159,6 @@
                     <li></li>
                 </ul>
                 <img src="img/layout-avenue.jpg" alt="" width="239" height="240">
-                <div class="layout__description">
-                    <h2 class="layout__title"></h2>
-                    <p></p>
-                    <a href="" class="layout__cost"></a>
-                </div>
             </li>
 
             <li class="catalog__item  layout">
@@ -183,13 +168,7 @@
                     <li></li>
                 </ul>
                 <img src="img/layout-dovetail.jpg" alt="" width="239" height="240">
-                <div class="layout__description">
-                    <h2 class="layout__title"></h2>
-                    <p></p>
-                    <a href="" class="layout__cost"></a>
-                </div>
             </li>
-
 
         </ul>
 
@@ -205,26 +184,25 @@
 
 <footer class="page-footer">
     </section>
-    <section class="map">
-        <div class="container">
-            <img src="img/icon-map-marker.png" alt="" class="map__marker" width="231" height="190">
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651625!2d30.3208946169043!3d59.93879418187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1486830077928"
+                width="100%" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <section class="social">
+        <div class="container clearfix">
 
             <section class="adress">
                 <h2 class="adress__title">NЁRDS DESIGN STUDIO</h2>
                 <p class="adress__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 <p class="adress__number">тел. +7 (812) 275-75-75</p>
-                <a href="#" class="btn  btn--block">Напишите нам</a>
+                <a href="#" id="open-contact" class="btn  btn--block">Напишите нам</a>
             </section>
 
-        </div>
-    </section>
-
-    <section class="social">
-        <div class="container clearfix">
             <div class="social__links">
-                <a href="#" class="social__btn  social__btn--vk">Vkontakte</a>
-                <a href="#" class="social__btn  social__btn--fb">Facebook</a>
-                <a href="#" class="social__btn  social__btn--ins">Instagram</a>
+                <a href="#" class="social__btn  social__btn--vk">Мы в Вконтакте</a>
+                <a href="#" class="social__btn  social__btn--fb">Мы в Фейсбуке</a>
+                <a href="#" class="social__btn  social__btn--ins">Мы в Инстаграме</a>
             </div>
             <div class="social__promo">
                 <b class="social__caption">Давайте дружить, это выгодно!</b>
@@ -247,6 +225,9 @@
     </form>
 
 </div>
+
+<script src="js/script.js"></script>
+
 </body>
 
 </html>
