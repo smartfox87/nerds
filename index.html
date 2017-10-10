@@ -2,218 +2,235 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Nёrd's</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Студия</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="page-header">
-        <div class="container">
+<header class="page-header">
+  <div class="container">
 
-            <section class="page-header__navigation clearfix">
-                <a class="page-header__logo">
-                    <img src="img/logo.png" alt="Логотип" width="139" height="56">
-                </a>
+    <section class="page-header__navigation clearfix">
+      <a class="page-header__logo">
+        <img src="img/logo.png" alt="Логотип" width="139" height="56">
+      </a>
 
-                <nav class="main-nav">
-                    <ul class="main-nav__list">
-                        <li class="main-nav__item  main-nav__item--current">
-                            <a>Студия</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="#">Клиенты</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="#">Магазин</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="#">Контакты</a>
-                        </li>
-                        <li class="main-nav__item  main-nav__item--card">
-                            <a href="#">Корзина</a>
-                        </li>
-                    </ul>
-                </nav>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item  main-nav__item--current">
+            <a>Студия</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Клиенты</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Контакты</a>
+          </li>
+          <li class="main-nav__item  main-nav__item--card">
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+      </nav>
 
-            </section>
+    </section>
 
-            <section class="slider">
-                <ul class="slider__controls-list">
-                    <li class="slider__controls-item">
-                        <input type="radio" name="slider__radio" id="slider__radio--long" value="" checked>
-                        <label for="slider__radio--long" class="slider__selector"></label>
-                    </li>
-                    <li class="slider__controls-item">
-                        <input type="radio" name="slider__radio" id="slider__radio--mathematics" value="">
-                        <label for="slider__radio--mathematics" class="slider__selector"></label>
-                    </li>
-                    <li class="slider__controls-item">
-                        <input type="radio" name="slider__radio" id="slider__radio--2" value="">
-                        <label for="slider__radio--2" class="slider__selector"></label>
-                    </li>
-                </ul>
+    <section class="slider">
+      <ul class="slider__controls-list">
+        <li class="slider__controls-item">
+          <input type="radio" name="slider__radio" id="slider__radio--1" checked>
+          <label for="slider__radio--1" class="slider__selector slider__selector--1"></label>
+        </li>
+        <li class="slider__controls-item">
+          <input type="radio" name="slider__radio" id="slider__radio--2">
+          <label for="slider__radio--2" class="slider__selector slider__selector--2"></label>
+        </li>
+        <li class="slider__controls-item">
+          <input type="radio" name="slider__radio" id="slider__radio--3">
+          <label for="slider__radio--3" class="slider__selector slider__selector--3"></label>
+        </li>
+      </ul>
 
-                <div class="slide slide--long slide--visible clearfix">
-                    <b class="slide__caption">Долго, дорого, <br>скрупулезно.</b>
-                    <p class="slide__text">Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
-                    <a href="#" class="btn  btn--slide">Узнать больше</a>
-                </div>
-
-                <div class="slide slide--mathematics clearfix">
-                    <b class="slide__caption">Любите ли вы математику, как любим ее мы?</b>
-                    <p class="slide__text">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
-                    <a href="#" class="btn  btn--slide">Узнать больше</a>
-                </div>
-
-                <div class="slide slide--hardcore clearfix">
-                    <b class="slide__caption">Только наркотики, <br>только хардкор!</b>
-                    <p class="slide__text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
-                    <a href="#" class="btn  btn--slide">Узнать больше</a>
-                </div>
-
-            </section>
-
+      <div class="slider__wrapper">
+        <div class="slide slide--long slide--show clearfix">
+          <b class="slide__caption">Долго, дорого, <br>скрупулезно.</b>
+          <p class="slide__text">Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.
+          </p>
+          <a href="#" class="btn  btn--slide">Узнать больше</a>
         </div>
-    </header>
 
-    <main class="container">
+        <div class="slide slide--mathematics clearfix">
+          <b class="slide__caption">Любите ли вы математику, как любим ее мы?</b>
+          <p class="slide__text">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им
+            возможность все просчитать</p>
+          <a href="#" class="btn  btn--slide">Узнать больше</a>
+        </div>
 
-        <section class="features">
-            <ul class="features__list">
-                <li class="features__item">
+        <div class="slide slide--hardcore clearfix">
+          <b class="slide__caption">Только наркотики, <br>только хардкор!</b>
+          <p class="slide__text">Все дизайнерские решения в нашей компании принимаются только под воздействием
+            качественных галлюциногенов</p>
+          <a href="#" class="btn  btn--slide">Узнать больше</a>
+        </div>
+      </div>
 
-                    <div class="feature feature--sites">
-                        <h2 class="feature__title">Веб-сайты</h2>
-                        <p class="feature__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                        <a href="#" class="btn">Заказать</a>
-                    </div>
+    </section>
 
-                </li>
-                <li class="features__item">
+  </div>
+</header>
 
-                    <div class="feature feature--apps">
-                        <h2 class="feature__title">Приложения</h2>
-                        <p class="feature__text">Покорите топ-10 приложений <br>в AppStrore и Google Play</p>
-                        <a href="#" class="btn btn--green">Заказать</a>
-                    </div>
+<main class="container">
 
-                </li>
-                <li class="features__item">
+  <section class="features">
+    <ul class="features__list">
+      <li class="features__item">
 
-                    <div class="feature feature--presentations">
-                        <h2 class="feature__title">Презентации</h2>
-                        <p class="feature__text">Вы даже не подозреваете, насколько вы изумительны!</p>
-                        <a href="#" class="btn btn--yellow">Заказать</a>
-                    </div>
+        <div class="feature feature--sites">
+          <h2 class="feature__title">Веб-сайты</h2>
+          <p class="feature__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a href="#" class="btn">Заказать</a>
+        </div>
 
-                </li>
-            </ul>
-        </section>
+      </li>
+      <li class="features__item">
 
-        <section class="about">
-            <div class="about__content clearfix">
-                <div class="about__description">
-                    <b class="about__caption">Мы — маленькая, но гордая дизайн-студия из Краснодара. </b>
-                    <p class="about__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-                </div>
-                <div class="about__logo">
-                    <img src="img/logo-about.png" alt="" width="187" height="75"></img>
-                    <div class="about__logo-signature">
-                        <span>Since 2004</span>
-                    </div>
-                </div>
-            </div>
+        <div class="feature feature--apps">
+          <h2 class="feature__title">Приложения</h2>
+          <p class="feature__text">Покорите топ-10 приложений <br>в AppStrore и Google Play</p>
+          <a href="#" class="btn btn--green">Заказать</a>
+        </div>
 
-            <div class="work clearfix">
-                <div class="work__orders">
-                    <span class="work__caption">Выполняем заказы на разработку:</span>
-                    <ul class="work__list">
-                        <li class="work__item">Веб-сайтов любой сложности</li>
-                        <li class="work__item">Мобильных приложений для iOS и Android</li>
-                        <li class="work__item">Слайдшоу и видео для корпоративных презентаций</li>
-                    </ul>
-                </div>
-                <div class="work__description">
-                    <span class="work__caption">Как мы работаем:</span>
-                    <ul class="work__list">
-                        <li class="work__item">С самоотдачей 146%</li>
-                        <li class="work__item">Соблюдая сроки на 100%</li>
-                        <li class="work__item">По предоплате 50%</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      </li>
+      <li class="features__item">
 
-        <section class="partners">
-            <ul class="partners__list">
-                <li class="partners__item">
-                    <a href="#" class="partners__link">
-                        <img src="img/links-logo-glukhanko.png" alt="Glukhanko" width="198" height="37">
-                    </a>
-                </li>
-                <li class="partners__item">
-                    <a href="#" class="partners__link">
-                        <img src="img/links-logo-academy.png" alt="Html Academy" width="199" height="68">
-                    </a>
-                </li>
-                <li class="partners__item">
-                    <a href="#" class="partners__link">
-                        <img src="img/links-logo-borodinski.png" alt="Borodinski" width="209" height="86">
-                    </a>
-                </li>
-            </ul>
-        </section>
+        <div class="feature feature--presentations">
+          <h2 class="feature__title">Презентации</h2>
+          <p class="feature__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a href="#" class="btn btn--yellow">Заказать</a>
+        </div>
 
-    </main>
+      </li>
+    </ul>
+  </section>
 
-    <footer class="page-footer">
+  <section class="about">
+    <div class="about__content clearfix">
+      <div class="about__description">
+        <b class="about__caption">Мы — маленькая, но гордая дизайн-студия из Краснодара. </b>
+        <p class="about__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше
+          креатива. Работаем не покладая рук, как роботы.</p>
+      </div>
+      <div class="about__logo">
+        <img src="img/logo-about.png" alt="" width="187" height="75">
+        <div class="about__logo-signature">
+          <span>Since 2004</span>
+        </div>
+      </div>
+    </div>
 
-        <section class="map">
-            <div class="container">
-                <img src="img/icon-map-marker.png" alt="" class="map__marker" width="231" height="190">
+    <div class="work clearfix">
+      <div class="work__orders">
+        <span class="work__caption">Выполняем заказы на разработку:</span>
+        <ul class="work__list">
+          <li class="work__item">Веб-сайтов любой сложности</li>
+          <li class="work__item">Мобильных приложений для iOS и Android</li>
+          <li class="work__item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+      <div class="work__description">
+        <span class="work__caption">Как мы работаем:</span>
+        <ul class="work__list">
+          <li class="work__item">С самоотдачей 146%</li>
+          <li class="work__item">Соблюдая сроки на 100%</li>
+          <li class="work__item">По предоплате 50%</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-                <section class="adress">
-                    <h2 class="adress__title">NЁRDS DESIGN STUDIO</h2>
-                    <p class="adress__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                    <p class="adress__number">тел. +7 (812) 275-75-75</p>
-                    <a href="#" class="btn  btn--block">Напишите нам</a>
-                </section>
+  <section class="partners">
+    <ul class="partners__list">
+      <li class="partners__item">
+        <a href="#" class="partners__link">
+          <img src="img/links-logo-glukhanko.png" alt="Glukhanko" width="198" height="37">
+        </a>
+      </li>
+      <li class="partners__item">
+        <a href="#" class="partners__link">
+          <img src="img/links-logo-academy.png" alt="Html Academy" width="199" height="68">
+        </a>
+      </li>
+      <li class="partners__item">
+        <a href="#" class="partners__link">
+          <img src="img/links-logo-borodinski.png" alt="Borodinski" width="209" height="86">
+        </a>
+      </li>
+    </ul>
+  </section>
 
-            </div>
-        </section>
+</main>
 
-        <section class="social">
-            <div class="container clearfix">
-                <div class="social__links">
-                    <a href="#" class="social__btn  social__btn--vk">Vkontakte</a>
-                    <a href="#" class="social__btn  social__btn--fb">Facebook</a>
-                    <a href="#" class="social__btn  social__btn--ins">Instagram</a>
-                </div>
-                <div class="social__promo">
-                    <b class="social__caption">Давайте дружить, это выгодно!</b>
-                    <p class="social__text">Скидка 10% для друзей из социальных сетей.</p>
-                </div>
-            </div>
-        </section>
+<footer class="page-footer">
 
-    </footer>
+  <div class="map">
+    <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8-a-YLvhaWGbNoHp4osRyH8Ke42WUHDy&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div>
 
-    <div class="modal-dialog">
-        <div class="modal-dialog__close"></div>
+  <section class="social">
+    <div class="container clearfix">
 
-        <form action="" class="dialog">
-            <label for="" class="dialog__name">Ваше имя:<input type="text" placeholder="Представьтесь пожалуйста"></label>
-            <label for="" class="dialog__mail">Ваш e-mail:<input type="text" placeholder="Для отправки ответа"></label>
-            <label for="" class="dialog__text">Текст письма:<textarea name="text" rows="4" cols="79">В свободной форме</textarea></label>
-            <button class="btn  btn--block">Отправить</button>
-        </form>
+      <section class="adress">
+        <h2 class="adress__title">NЁRDS DESIGN STUDIO</h2>
+        <p class="adress__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="adress__number">тел. +7 (812) 275-75-75</p>
+        <a href="#" id="open-contact" class="btn  btn--block">Напишите нам</a>
+      </section>
+
+      <div class="social__links">
+        <a href="#" class="social__btn  social__btn--vk">Мы в Вконтакте</a>
+        <a href="#" class="social__btn  social__btn--fb">Мы в Фейсбуке</a>
+        <a href="#" class="social__btn  social__btn--ins">Мы в Инстаграме</a>
+      </div>
+
+      <div class="social__promo">
+        <b class="social__caption">Давайте дружить, это выгодно!</b>
+        <p class="social__text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
 
     </div>
+  </section>
+
+</footer>
+
+<div class="modal-dialog">
+  <div class="modal-dialog__close"></div>
+
+  <form action="" class="dialog">
+    <label class="dialog__name">Ваше имя:
+      <input type="text" placeholder="Представьтесь пожалуйста">
+    </label>
+    <label class="dialog__mail">Ваш e-mail:
+      <input type="text" placeholder="Для отправки ответа">
+    </label>
+    <label class="dialog__text">Текст письма:
+      <textarea name="text" rows="4"
+              cols="79">В свободной форме</textarea>
+    </label>
+    <button class="btn  btn--block">Отправить</button>
+  </form>
+
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
